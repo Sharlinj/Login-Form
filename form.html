@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>form</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <style>
+            .ab {
+                margin:0px;
+                padding:0px;
+                box-sizing: border-box;
+                background-color:rgba(133, 162, 233, 0.5);
+                box-shadow: 0 0 50px rgb(0, 0, 0);
+                border-radius: 5px;
+                width: 500PX;
+                padding: 20px 20px 20px 20px;
+            }
+            body {
+                display: flex;
+                justify-content: center;
+                color: white;
+                background: url(backgroundimg.jpg);
+                background-position: center;
+                background-size: cover;
+                align-items: center;
+                /*background: linear-gradient(to right, rgb(207, 43, 128), rgb(179, 91, 131), rgb(149, 111, 126))*/
+            }
+            h2, h4 
+            {
+                text-align: center;
+            }
+            .li {
+                width: 100%;
+                position: relative;
+            }
+            .li input{
+                width: 100%;
+                height: 35px;
+                background: transparent;
+                border: none;
+                border: 2px solid rgb(28, 12, 75);
+                padding: 0px 20px 0px 20px;
+                border-radius: 5px;
+            }
+            i {
+                position: absolute;
+                right: 20px;
+                top: 50%; 
+            }
+            .rmf{
+                display: flex;
+                justify-content: space-between;
+            }
+            .btn{
+                width: 100%;
+                height: 35px;
+                position: relative;
+                border-radius: 5px;
+            }
+            .reg{
+                text-align: center;
+            }
+            ::placeholder,h4{
+                color: rgb(28, 12, 75);
+            }
+            a{
+                color:rgb(20, 6, 62); ;
+            }
+        </style>
+    </head>
+    <body>
+        <form class="ab" name="form" onsubmit="return validation()">
+            <div>
+                <h2><b>Sign in</b></h2> 
+                <h4>Sign in with your username and password</h4>
+            </div>
+            <div class="li">
+                <label for="username">Your Username</label><br><br>
+                <input type="text" name="us" id="username" placeholder="Enter Username">
+                <i class='bx bx-user' ></i><br><br>
+            </div>
+            <div class="li">
+                <label for="password">Your Password</label><br><br>
+                <input type="password" id="password" placeholder="Enter Password" required>
+                <i class='bx bx-lock-alt'></i><br><br>
+            </div>
+            <div class="rmf">
+                <label for="rm"><input type="checkbox" id="rm">Remember me</label>
+                <a href="#"style="text-decoration: none;">Forgot Password?</a>
+            </div><br>
+            <div>
+                <button class="btn" type="submit"><a href="img.html" style="text-decoration: none;">Login</a></button>
+            </div>
+            <div class="reg">
+                <h5>Not a member? <a href="#" style="text-decoration: none;"> Register Here!</a></h5>
+            </div>
+        </form>
+        <script src="form.js"></script>
+    </body>
+</html>
